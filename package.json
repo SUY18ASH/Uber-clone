@@ -1,0 +1,25 @@
+{
+  "name": "uber-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SUY18ASH/Uber-clone.git"
+  },
+  "author": "Suyash Chouksey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SUY18ASH/Uber-clone/issues"
+  },
+  "homepage": "https://github.com/SUY18ASH/Uber-clone#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "http": "^0.0.1-security"
+  }
+}
