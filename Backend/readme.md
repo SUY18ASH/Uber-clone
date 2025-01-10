@@ -35,3 +35,34 @@ Registers a new user.
   }
 }
 ```
+
+## POST /users/login
+Logs in a user.
+
+### Request Body
+```json
+{
+  "email": "string (must be valid email)",
+  "password": "string (min. 6 chars)"
+}
+```
+
+### Response
+- 201: Returns the token and user object
+- 400: Validation errors
+- 401: Invalid email or password
+
+### Example Response
+```json
+{
+  "token": "example.jwt.token",
+  "user": {
+    "_id": "123456",
+    "fullname": {
+      "firstname": "John",
+      "lastname": "Doe"
+    },
+    "email": "john@example.com"
+  }
+}
+```
